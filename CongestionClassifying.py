@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from debe import *
 from tw import *
 
@@ -129,6 +130,7 @@ class CongestionClassifying(object):
         if len(results) > 0:
             for r in results:
                 self.update_raw_data(r[0])
+                print(r)
 
 def main():
     CongestionClassifying()
