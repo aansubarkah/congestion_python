@@ -41,7 +41,7 @@ class CongestionTagging(object):
         datum = re.sub(r"(?:\RT @|@|pic.twitter.com|https?\://)\S+", '', data)
         datum = re.sub(r"\([^)]*\)", "", datum)
         datum = re.sub(" +", " ", datum)
-        #infoCleaned = re.sub(r"\.", "", infoCleaned)
+        infoCleaned = re.sub(r"\.", "", infoCleaned)
         datum = datum.strip()
         datum = datum.lower()
         return datum
@@ -51,7 +51,7 @@ class CongestionTagging(object):
         from nltk.tokenize import word_tokenize
         from labels import labels
 
-        tagger = pickle.load(open("tagged.pickle", "rb"))
+        tagger = pickle.load(open("/home/aan/congestion/tagged.pickle", "rb"))
         words = tagger.tag(word_tokenize(data))
         datum = []
         for w in words:

@@ -74,7 +74,7 @@ class CongestionClassifying(object):
     def find_analyzer(self, t_user_id):
         #import os.path
         import pickle
-        classifiers_dir = 'relevant_classifiers/'
+        classifiers_dir = '/home/aan/congestion/relevant_classifiers/'
         #if os.path.exists(classifiers_dir + 'classifier_' + t_user_id + '.pickle') == True:
         try:
             analyzer = pickle.load(open(classifiers_dir + 'classifier_' + t_user_id + '.pickle', 'rb'))
