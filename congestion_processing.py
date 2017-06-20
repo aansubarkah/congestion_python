@@ -6,6 +6,8 @@ from CongestionLocating import main as locating
 from CongestionSpoting import main as spoting
 from CongestionMachining import main as machining
 from CongestionMarkering import main as markering
+from CongestionMongoing import main as mongoing
+from CongestionTweeting import main as tweeting
 
 if __name__ == '__main__':
     mining()
@@ -15,3 +17,5 @@ if __name__ == '__main__':
     spoting()
     machining()
     markering()
+    mongoing()
+    tweeting()

@@ -311,6 +311,7 @@ class ProcessMongoing(BasePostgresTraffic):
     tweet_user_screen_name = Column(String(255))
     tweet_official = Column(Boolean())
     respondent_active = Column(Boolean())
+    respondent_tmc = Column(Boolean())
     respondent_region_id = Column(Integer())
     respondent_region_name = Column(String(255))
     respondent_name = Column(String(255))

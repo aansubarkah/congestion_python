@@ -70,6 +70,7 @@ class CongestionMongoing(object):
                 'tweet_official': q.tweet_official,
                 'respondent_id': q.respondent_id,
                 'respondent_active': q.respondent_active,
+                'respondent_tmc': q.respondent_tmc,
                 'respondent_region_id': q.respondent_region_id,
                 'respondent_region_name': q.respondent_region_name,
                 'respondent_name': q.respondent_name,
@@ -99,7 +100,7 @@ class CongestionMongoing(object):
     def insert_marker_data_mongo(self, data):
         import datetime, pytz, pymongo
         mongoClient = pymongo.MongoClient('localhost:27017')
-        markersDB = mongoClient.marker
+        markersDB = mongoClient.congestion
         jakarta = pytz.timezone('Asia/Jakarta')
         aware_datetime = jakarta.localize(datetime.datetime.now())
         aware_twitter_datetime = jakarta.localize(data['tweet_time'])
@@ -122,6 +123,7 @@ class CongestionMongoing(object):
                 'name': data['respondent_name'],
                 'official': data['tweet_official'],
                 'active': data['respondent_active'],
+                'tmc': data['respondent_tmc'],
                 'region': {
                     'id': data['respondent_region_id'],
                     'name': data['respondent_region_name'],
@@ -134,7 +136,7 @@ class CongestionMongoing(object):
             },
             'loc': {
                 'type': 'Point',
-                'coordinates': [data['place']['lng'], data['place']['lng']],
+                'coordinates': [data['place']['lng'], data['place']['lat']],
                 'name': data['place']['name'],
                 'id': data['place']['id'],
                 'regency': {
@@ -163,6 +165,7 @@ class CongestionMongoing(object):
         data = self.get_marker_unprocessed(limitQuery)
         for d in data:
             self.insert_marker_data_mongo(d)
+            self.update_marker_data(d['marker_id'])
             results.append(d)
             print(d)
 
