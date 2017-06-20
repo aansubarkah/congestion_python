@@ -59,6 +59,12 @@ class CongestionMachining(object):
         sessionPostgresTraffic.commit()
 
     def insert_machine_data(self, data):
+        if (data[2] is None) or (data[2] == 0):
+            data[2] = 0
+
+        if (data[3] is None) or (data[3] == 0):
+            data[3] = 0
+
         temp = Machine(
             raw_id = data[0],
             classification_id = data[1],

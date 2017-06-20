@@ -27,6 +27,7 @@ class CongestionMarkering(object):
     def get_machine_unprocessed(self, limitQuery):
         data = []
         query = sessionPostgresTraffic.query(ProcessMarkering).\
+            filter(ProcessMarkering.place_id > 0, ProcessMarkering.category_id > 0).\
             limit(limitQuery)
         for q in query:
             data.append([
@@ -69,7 +70,7 @@ class CongestionMarkering(object):
             raw_id = data[4],
             lat = data[5],
             lng = data[6],
-            info = data[7]
+            info = ''
         )
         sessionPostgresTraffic.add(temp)
 
@@ -79,7 +80,7 @@ class CongestionMarkering(object):
         data = self.get_machine_unprocessed(limitQuery)
         if len(data) > 0:
             for d in data:
-                self.insert_marker_data([d[11], d[17], d[5], d[13], d[0], d[3], d[4], d[2]])
+                self.insert_marker_data([d[11], d[17], d[5], d[13], d[0], d[3], d[4]])
                 results.append(d)
             sessionPostgresTraffic.commit()
 
