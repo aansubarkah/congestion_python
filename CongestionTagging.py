@@ -41,7 +41,7 @@ class CongestionTagging(object):
         datum = re.sub(r"(?:\RT @|@|pic.twitter.com|https?\://)\S+", '', data)
         datum = re.sub(r"\([^)]*\)", "", datum)
         datum = re.sub(" +", " ", datum)
-        infoCleaned = re.sub(r"\.", "", infoCleaned)
+        datum = re.sub(r"\.", "", datum)
         datum = datum.strip()
         datum = datum.lower()
         return datum
