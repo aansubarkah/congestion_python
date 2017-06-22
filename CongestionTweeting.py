@@ -46,7 +46,7 @@ class CongestionTweeting(object):
                 '$gte':datetimeBefore, '$lt':datetimeNow
             },
             'tweeted': False
-        }).sort('_id', 1)
+        }).sort('_id', -1)
 
         return markers
 

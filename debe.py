@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from sqlalchemy import Table, Column, Integer, Numeric, String, Text, ForeignKey, DateTime, MetaData, create_engine, desc, func, cast, and_, or_, not_, BigInteger, Boolean, Float, exists, DATE
+from sqlalchemy import Table, Column, Integer, Numeric, String, Text, ForeignKey, DateTime, MetaData, create_engine, desc, func, cast, and_, or_, not_, BigInteger, Boolean, Float, exists, DATE, update
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql import text
@@ -65,6 +65,18 @@ class Kind(BasePostgresTraffic):
     trained = Column(Boolean, default=False)
     chunked = Column(Boolean, default=False)
 
+class Denomination(BasePostgresTraffic):
+    __tablename__ = 'denominations'
+    id = Column(BigInteger, primary_key=True)
+    raw_id = Column(BigInteger())
+    classification_id = Column(Integer())
+    user_id = Column(BigInteger())
+    active = Column(Boolean, default=True)
+    created = Column(DateTime(), default=datetime.now)
+    modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
+    verified = Column(Boolean, default=False)
+    trained = Column(Boolean, default=False)
+
 class Word(BasePostgresTraffic):
     __tablename__ = 'words'
     id = Column(BigInteger, primary_key=True)
@@ -88,6 +100,7 @@ class Syllable(BasePostgresTraffic):
     sequence = Column(Integer())
     name = Column(String(255))
     trained = Column(Boolean, default=False)
+    verified = Column(Boolean, default=False)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
     active = Column(Boolean, default=True)
@@ -209,10 +222,25 @@ class Spot(BasePostgresTraffic):
     category_id = Column(Integer())
     weather_id = Column(Integer, default=1)
     active = Column(Boolean, default=True)
+    verified = Column(Boolean, default=False)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
     processed = Column(Boolean, default=False)
     score = Column(Float())
+
+class Space(BasePostgresTraffic):
+    __tablename__ = 'spaces'
+    id = Column(BigInteger, primary_key=True)
+    piece_id = Column(BigInteger())
+    raw_id = Column(BigInteger())
+    user_id = Column(BigInteger())
+    place_id = Column(BigInteger())
+    category_id = Column(Integer())
+    weather_id = Column(Integer, default=1)
+    active = Column(Boolean, default=True)
+    trained = Column(Boolean, default=False)
+    created = Column(DateTime(), default=datetime.now)
+    modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
 
 class Machine(BasePostgresTraffic):
     __tablename__ = 'machines'
@@ -226,9 +254,26 @@ class Machine(BasePostgresTraffic):
     info = Column(Text())
     media = Column(String(255))
     active = Column(Boolean, default=True)
+    verified = Column(Boolean, default=False)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
     processed = Column(Boolean, default=False)
+
+class Human(BasePostgresTraffic):
+    __tablename__ = 'humans'
+    id = Column(BigInteger, primary_key=True)
+    raw_id = Column(BigInteger())
+    space_id = Column(BigInteger())
+    classification_id = Column(Integer())
+    place_id = Column(BigInteger())
+    category_id = Column(Integer())
+    weather_id = Column(Integer())
+    info = Column(Text())
+    media = Column(String(255))
+    active = Column(Boolean, default=True)
+    trained = Column(Boolean, default=False)
+    created = Column(DateTime(), default=datetime.now)
+    modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
 
 class Marker(BasePostgresTraffic):
     __tablename__ = 'markers'
