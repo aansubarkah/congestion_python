@@ -7,12 +7,12 @@ query = sessionPostgresTraffic.query(Denomination).\
     with_entities(Denomination.raw_id).\
     all()
 
-# Update Kind
+# Update Raw Classifying Column
 for q in query:
-    queryToUpdate = sessionPostgresTraffic.query(Kind).\
-        filter(Kind.raw_id == q[0]).\
+    queryToUpdate = sessionPostgresTraffic.query(Raw).\
+        filter(Raw.id == q[0]).\
         first()
-    queryToUpdate.verified = True
+    queryToUpdate.classifying = True
     sessionPostgresTraffic.commit()
     print(q[0])
 
@@ -27,12 +27,12 @@ for q in query:
     if q[0] not in syllable_raw_ids:
         syllable_raw_ids.append(q[0])
 
-# Update words
+# Update Raw Tagging Column
 for s in syllable_raw_ids:
     print(s)
-    sessionPostgresTraffic.query(Word).\
-        filter(Word.raw_id == s).\
-        update(dict(verified=True))
+    sessionPostgresTraffic.query(Raw).\
+        filter(Raw.id == s).\
+        update(dict(tagging=True))
     sessionPostgresTraffic.commit()
 
 # Get raw_id from pieces
@@ -45,10 +45,10 @@ for q in query:
     if q[0] not in data:
         data.append(q[0])
 
-# Update Chunk
+# Update Raw Chunking Column
 for d in data:
-    sessionPostgresTraffic.query(Chunk).\
-        filter(Chunk.raw_id == d).\
-        update(dict(verified=True))
+    sessionPostgresTraffic.query(Raw).\
+        filter(Raw.id == d).\
+        update(dict(chunking=True))
     sessionPostgresTraffic.commit()
     print(d)

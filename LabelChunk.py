@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from debe import *
 
-class CongestionSpoting(object):
+class LabelChunk(object):
     def __init__(self):
         self.main()
 
@@ -24,9 +24,9 @@ class CongestionSpoting(object):
         self.elapsed = math.ceil(timeit.default_timer() - self.startTime)
         self.finishText = time.strftime("%H:%M:%S")
 
-    def get_chunks_unprocessed(self, limitQuery):
+    def get_pieces_unprocessed(self, limitQuery):
         data = []
-        query = sessionPostgresTraffic.query(ProcessSpoting).\
+        query = sessionPostgresTraffic.query(ProcessLabelChunk).\
             limit(limitQuery)
 
         for q in query:
@@ -36,7 +36,7 @@ class CongestionSpoting(object):
             regency = [d.regency_id for d in regencies]
 
             data.append([
-                q.chunk_id,
+                q.piece_id,
                 q.raw_id,
                 q.respondent_region_id,
                 q.place,
@@ -157,43 +157,42 @@ class CongestionSpoting(object):
 
         return [condition_id, condition_name]
 
-    def update_chunk_data(self, chunk_id):
-        query = sessionPostgresTraffic.query(Chunk).\
-            filter(Chunk.id == chunk_id).\
+    def update_piece_data(self, piece_id):
+        query = sessionPostgresTraffic.query(Piece).\
+            filter(Piece.id == piece_id).\
             first()
         query.processed = True
         sessionPostgresTraffic.commit()
 
-    def insert_spot_data(self, data):
-        temp = Spot(
-            chunk_id = data[0],
+    def insert_space_data(self, data):
+        temp = Space(
+            piece_id = data[0],
             raw_id = data[1],
             place_id = data[2],
             weather_id = 1,
-            category_id = data[3],
-            score = data[4]
+            category_id = data[3]
         )
         sessionPostgresTraffic.add(temp)
 
     def main(self):
         limitQuery = 50
         results = []
-        data = self.get_chunks_unprocessed(limitQuery)
+        data = self.get_pieces_unprocessed(limitQuery)
         if len(data) > 0:
             for d in data:
                 place = self.find_place(d[3], d[5])
                 condition = self.find_condition(d[4])
-                self.insert_spot_data([d[0], d[1], place[0], condition[0], place[2]])
+                self.insert_space_data([d[0], d[1], place[0], condition[0], place[2]])
                 results.append([d[0], d[1], d[3], d[4], place[0], place[1], place[2], condition[0], condition[1]])
             sessionPostgresTraffic.commit()
 
         if len(results) > 0:
             for r in results:
-                self.update_chunk_data(r[0])
+                self.update_piece_data(r[0])
                 print(r)
 
 def main():
-    CongestionSpoting()
+    LabelChunk()
 
 if __name__ == '__main__':
     main()

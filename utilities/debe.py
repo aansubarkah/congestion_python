@@ -39,6 +39,10 @@ class Raw(BasePostgresTraffic):
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
     processed = Column(Boolean, default=False)
     active = Column(Boolean, default=True)
+    classifying = Column(Boolean, default=False)
+    tagging = Column(Boolean, default=False)
+    chunking = Column(Boolean, default=False)
+    locating = Column(Boolean, default=False)
 
 class Respondent(BasePostgresTraffic):
     __tablename__ = 'respondents'

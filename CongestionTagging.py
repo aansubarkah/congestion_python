@@ -28,7 +28,7 @@ class CongestionTagging(object):
     def get_kinds_unprocessed(self, limitQuery):
         data = []
         query = sessionPostgresTraffic.query(ProcessChunking).\
-            filter(ProcessChunking.classification_id == 1, ProcessChunking.kind_processed == False).\
+            filter(ProcessChunking.kind_processed == False).\
             order_by(desc(ProcessChunking.t_time)).\
             limit(limitQuery)
         for q in query:
