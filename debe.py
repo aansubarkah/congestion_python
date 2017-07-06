@@ -432,3 +432,18 @@ class ProcessRegency(BasePostgresTraffic):
     region_lng = Column(Float())
     region_name = Column(String(255))
     region_description = Column(String(255))
+
+class TrainKind(BasePostgresTraffic):
+    __tablename__ = 'train_kind'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    kind_id = Column(BigInteger())
+    at_classification_id = Column(Integer())
+    denomination_id = Column(BigInteger, primary_key=True)
+    mt_classification_id = Column(Integer())
+    trained = Column(Boolean, default=True)
+    classification_id = Column(Integer())
+    classification_name = Column(String(255))
+    respondent_id = Column(BigInteger())
+    respondent_name = Column(String(255))
