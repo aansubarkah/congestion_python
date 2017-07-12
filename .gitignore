@@ -1,3 +1,7 @@
-c0ng3st10n.sql
+*.sql
+*.pickle
+*.json
+*.xlsx
 /relevant_classifiers/*
+/relevant_classifiers_old/*
 /__pycache__/*

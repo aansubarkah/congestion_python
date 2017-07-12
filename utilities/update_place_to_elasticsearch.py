@@ -50,7 +50,7 @@ for p in places:
 
 mappings = {
     'mappings': {
-        'place_doc': {
+        'congestion_doc': {
             'properties': {
                 'name': {
                     'type': 'string',

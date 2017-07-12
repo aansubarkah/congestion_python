@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from debe import *
 
-class CongestionSpoting(object):
+class FpCongestionSpoting(object):
     def __init__(self):
         self.main()
 
@@ -46,6 +46,7 @@ class CongestionSpoting(object):
         return data
 
     def find_place(self, place, regency_ids):
+        print(place)
         from elasticsearch import Elasticsearch
         es = Elasticsearch([{
             'host': 'localhost',
@@ -113,7 +114,6 @@ class CongestionSpoting(object):
             'normal',
             'kondusif',
             'terkendali',
-            'merambat',
             'Macet',
             'Padat',
             'Lancar',
@@ -123,8 +123,7 @@ class CongestionSpoting(object):
             'Ramai Lancar',
             'Normal',
             'Kondusif',
-            'Terkendali',
-            'Merambat'
+            'Terkendali'
         ]
         conditionsKeyValue = {
             'macet': 1,
@@ -138,7 +137,6 @@ class CongestionSpoting(object):
             'normal': 3,
             'kondusif': 3,
             'terkendali': 3,
-            'merambat': 2,
             'Macet': 1,
             'Padat': 2,
             'Lancar': 3,
@@ -148,8 +146,7 @@ class CongestionSpoting(object):
             'Ramai Lancar': 6,
             'Normal': 3,
             'Kondusif': 3,
-            'Terkendali': 3,
-            'Merambat': 2
+            'Terkendali': 3
         }
         condition_id = 0
         condition_name = ''
@@ -180,7 +177,7 @@ class CongestionSpoting(object):
         sessionPostgresTraffic.add(temp)
 
     def main(self):
-        limitQuery = 50
+        limitQuery = 200
         results = []
         data = self.get_chunks_unprocessed(limitQuery)
         if len(data) > 0:
@@ -197,7 +194,7 @@ class CongestionSpoting(object):
                 print(r)
 
 def main():
-    CongestionSpoting()
+    FpCongestionSpoting()
 
 if __name__ == '__main__':
     main()

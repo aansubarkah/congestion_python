@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from debe import *
 
-class CongestionTagging(object):
+class FpCongestionTagging(object):
     def __init__(self):
         self.main()
 
@@ -103,14 +103,14 @@ class CongestionTagging(object):
             sessionPostgresTraffic.add(temp)
 
     def main(self):
-        limitQuery = 50
+        limitQuery = 200
         results = []
         data = self.get_kinds_unprocessed(limitQuery)
         if len(data) > 0:
             for d in data:
                 dCleaned = self.cleaning(d[2])
                 dTagged = self.tagging(dCleaned)
-                self.insert_syllable_data([d[0], d[1], d[2], dCleaned, dTagged])
+                #self.insert_syllable_data([d[0], d[1], d[2], dCleaned, dTagged])
                 self.insert_word_data([d[0], d[1], d[2], dCleaned, dTagged])
                 results.append([d[0], d[1], d[2], dCleaned, dTagged])
             sessionPostgresTraffic.commit()
@@ -123,7 +123,7 @@ class CongestionTagging(object):
                 print(r)
 
 def main():
-    CongestionTagging()
+    FpCongestionTagging()
 
 if __name__ == '__main__':
     main()

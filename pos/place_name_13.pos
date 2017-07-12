@@ -1,0 +1,28 @@
+[ Jl/NN ./. Ciputat/NNP Raya/NNP -/-- TB/NNP ./. Simatupang/NNP -/-- Perempatan/NN Metro/NNP Pondok/NN Indah/NNP ]
+
+[ Jl/NN ./. Dr./NNP Ir/NNP ./. H./NNP Sukarno/NNP (/( depan/NN Kampus/NN C/NNP UNAIR/NNP )/) ]
+
+[ Jl/NN ./. Gatot/NNP Subroto/NNP (/( Kantor/NNP Pelayanan/NNP Pajak/NNP )/) -/-- Komdak/NNP -/-- Semanggi/NNP ]
+
+[ Jl/NN ./. H./NNP R./NNP Rasuna/NNP Said/NNP Kuningan/NNP -/-- Jl/NN ./. Prof./NNP DR./NNP Satrio/NNP ]
+
+[ Jl/NN ./. KH/NNP Sholeh/NNP Iskandar/NNP (/( Bina/NNP Insani/NNP )/) -/-- Jalur/NNP Tol/NN BORR/NNP ]
+
+[ Jl/NN ./. Pangeran/NNP Antasari/NNP -/-- Jl/NN ./. Cipete/NNP Raya/NNP -/-- Jl/NN ./. Fatmawati/NNP ]
+
+[ Jl/NN ./. Pasundan/NNP -/-- Jl/NN ./. Arif/NNP Rahman/NN Hakim/NNP (/( SMU/NNP Pasundan/NNP )/) ]
+
+[ Jl/NN ./. Proklamasi/NNP -/-- Jl/NN ./. Pangeran/NNP Diponegoro/NNP -/-- Jl/NN ./. Imam/NNP Bonjol/NNP ]
+
+[ Jl/NN ./. Radio/NN Dalam/NNP Raya/NNP -/-- Pondok/NN Indah/NNP //SYM Jl/NN ./. H./NNP Nawi/NNP ]
+
+[ Jl/NN ./. Raya/NNP Sukabumi/NN (/( Jalur/NNP dari/IN Ciawi/NNP -/-- Caringin/NNP -/-- Lido/NNP )/) ]
+
+[ Jl/NN ./. Raya/NNP Sukaraja/NNP -/-- Sukabumi/NN (/( Seputar/NNP PT/NNP ./. Daihan/NN Global/NNP )/) ]
+
+[ Jl/NN ./. Sadang/NNP -/-- Jl/NN ./. Cibolerang/NNP Barat/NNP (/( Taman/NN Kopo/NNP Indah/NNP )/) ]
+
+[ Jl/NN ./. Soekarno/NNP Hatta/NNP -/-- Jl/NN ./. Raya/NNP Kopo/NNP (/( By/NNP Pass/NNP )/) ]
+
+[ Simpangan/NNP Jl/NN ./. Soekarno/NNP Hatta/NNP arah/RB ke/IN Jl/NN ./. Fatmawati/NNP (/( Semarang/NNP )/) ]
+

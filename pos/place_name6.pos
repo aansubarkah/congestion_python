@@ -1,0 +1,776 @@
+[ A/NNP Yani/NNP (/( Taman/NN Pelangi/NNP )/) ]
+
+[ A./NNP Yani/NNP (/( Hotel/NN Papilio/NNP )/) ]
+
+[ A./NNP Yani/NNP (/( Jatim/NNP Expo/NNP )/) ]
+
+[ A./NNP Yani/NNP (/( Royal/NNP Plaza/NNP )/) ]
+
+[ AJBS/NNP (/( Jl/NN ./. Ratna/NNP )/) ]
+
+[ Alun/NN -/-- Alun/NN Leles/NNP ,/, Garut/NNP ]
+
+[ Arief/NNP Rahman/NN Hakim/NNP (/( ITATS/NNP )/) ]
+
+[ Arif/NNP Rahman/NN (/( Masjid/NNP Sa'adah/NNP )/) ]
+
+[ Banjar/NNP (/( Perbatasan/NN Jawa/NNP Tengah/NNP )/) ]
+
+[ Basuki/NNP Rahmat/NNP (/( Gramedia/NNP Expo/NNP )/) ]
+
+[ By/NNP Pass/NNP Soeta/NNP -/-- Pasir/NN Koja/NNP ]
+
+[ Cilandak/NNP -/-- Jl/NN ./. Raya/NNP Ampera/NNP ]
+
+[ Ciledug/NNP Raya/NNP arah/RB ke/NNP Kebayoran/NNP Lama/NNP ]
+
+[ Depan/NN Gontor/NNP 3/CD Jl/NN ./. Ngawi-Solo/NNP ]
+
+[ Depan/NN Jl/NN ./. Stasiun/NN Pondok/NN Cina/NNP ]
+
+[ Deplu/NNP Raya/NNP Bintaro/NNP arah/RB Pondok/NN Pinang/NNP ]
+
+[ Dukuh/NNP Atas/NN -/-- Bundaran/NNP Hotel/NN Indonesia/NNP ]
+
+[ Dupak/NNP -/-- Tol/NN Sby/NNP -/-- Gresik/NNP ]
+
+[ Exit/NNP Tol/NN Cileunyi/NNP dari/IN arah/RB Jakarta/NNP ]
+
+[ Exit/NNP Tol/NN Jembatan/NN Tiga/CD dari/IN Cawang/NNP ]
+
+[ Flyover/NN Jombor/NNP -/-- Ring/NNP Road/NNP Utara/NNP ]
+
+[ Flyover/NN Pasupati/NNP (/( arah/RB Barat/NNP )/) ]
+
+[ Flyover/NN Pasupati/NNP (/( arah/RB Timur/NNP )/) ]
+
+[ Frontage/NNP A./NNP Yani/NNP (/( UINSA/NNP )/) ]
+
+[ GT/NN Cileunyi/NNP (/( arah/RB Keluar/VB )/) ]
+
+[ Gelora/NNP Bung/NNP Karno/NNP (/( Jakarta/NNP )/) ]
+
+[ Grogol/NNP -/-- Daan/NN Mogot/NNP -/-- Pesing/NNP ]
+
+[ Grogol/NNP arah/RB Jl/NN ./. Gajah/NNP Mada/NNP ]
+
+[ Gunung/NN Sari/NNP (/( Bhumi/NN Marinir/NNP )/) ]
+
+[ Gunung/NN Sari/NNP (/( Hotel/NN Singgasana/NNP )/) ]
+
+[ Ir/NNP ./. H./NNP Soekarno/NNP -/-- Mulyorejo/NNP ]
+
+[ JICT/NNP Jakarta/NNP (/( Tanjung/NNP Priok/NNP )/) ]
+
+[ JL/NNP Braga/NNP -/-- Jl/NN ./. Suniaraja/NNP ]
+
+[ JLNT/NNP Antasari/NNP -/-- T.B/NNP ./. Simatupang/NNP ]
+
+[ Jatinangor/NNP (/( Depan/NN ITB/NNP Jatinangor/NNP )/) ]
+
+[ Jembatan/NN Layang/NNP Kapten/NNP Tendean/NNP -/-- Pancoran/NNP ]
+
+[ Jl/NN A/NNP Yani/NNP -/-- Jl/NN Laswi/NNP ]
+
+[ Jl/NN A/NNP Yani/NNP Ketanggungan/NNP -/-- Slawi/NNP ]
+
+[ Jl/NN AH/NNP Nasution/NNP (/( Sukamiskin/MD )/) ]
+
+[ Jl/NN Anggrek/NNP -/-- Jl/NN Tangkuban/NNP Perahu/NNP ]
+
+[ Jl/NN Bojongsoang/NNP (/( depan/NN BJB/NNP )/) ]
+
+[ Jl/NN Cendrawasih/NNP ,/, Tanjung/NNP ,/, Brebes/NNP ]
+
+[ Jl/NN Cicendo/NNP -/-- Jl/NN Kebon/NN Kawung/NNP ]
+
+[ Jl/NN DR/NNP Setiabudhi/NNP (/( Ledeng/NNP )/) ]
+
+[ Jl/NN Gandawijaya/NNP (/( Simpang/NN Permata/NNP )/) ]
+
+[ Jl/NN Gedebage/NNP (/( Pos/NN Merapi/jembatan/NN )/) ]
+
+[ Jl/NN H/NNP Gofur/NNP -/-- Jl/NN Gadobangkong/NNP ]
+
+[ Jl/NN Holis/NNP -/-- Jl/NN Soekarno/NNP Hatta/NNP ]
+
+[ Jl/NN Jakarta/NNP (/( dari/IN Antapani/NNP )/) ]
+
+[ Jl/NN Kadungora/NNP (/( perlintasan/NNP KA/NNP )/) ]
+
+[ Jl/NN Kaum/NNP -/-- Jl/NN AH/NNP Nasution/NNP ]
+
+[ Jl/NN Kerkof/NNP (/( depan/NN Borma/NNP )/) ]
+
+[ Jl/NN Kol.Masturi/NNP (/( depan/NN AlfaMart/NNP )/) ]
+
+[ Jl/NN Kutisari/NNP Utara/NNP -/-- Rungkut/NNP Industri/NNP ]
+
+[ Jl/NN Laswi/NNP -/-- Jl/NN Jelekong/NNP Baleendah/NNP ]
+
+[ Jl/NN Laswi/NNP ,/, Cipicung/NNP -/-- Baleendah/NNP ]
+
+[ Jl/NN Limbangan/NNP Timur/NNP (/( Ciseureuh/NNP )/) ]
+
+[ Jl/NN Martanegara/NNP -/-- Jl/NN Pelajar/NNP Pejuang/NNP ]
+
+[ Jl/NN Mataram/NNP (/( Terminal/NN Tegal/NNP )/) ]
+
+[ Jl/NN Merdeka/NNP (/( depan/NN BIP/NNP )/) ]
+
+[ Jl/NN Meyjen/NNP Didi/NNP Kartasasmita/NNP -/-- Banjar/NNP ]
+
+[ Jl/NN Moh/NNP Toha/NNP -/-- Jl/NN Dayeuhkolot/NNP ]
+
+[ Jl/NN Ngagel/NNP -/-- Jl/NN Upa/NNP Jiwa/NNP ]
+
+[ Jl/NN Pahlawan/NNP (/( Depan/NN Griya/NNP )/) ]
+
+[ Jl/NN Parakan/NNP Muncang/NNP -/-- Jl/NN Rancaekek/NNP ]
+
+[ Jl/NN Pelajar/NNP Pejuang/NNP -/-- Jl/NN BKR/NNP ]
+
+[ Jl/NN Rancaekek/NNP (/( depan/NN Daihatsu/NNP )/) ]
+
+[ Jl/NN Riau/NNP (/( Depan/NN Kompas/NNP )/) ]
+
+[ Jl/NN Riau/NNP (/( Kantor/NNP Kejati/NNP )/) ]
+
+[ Jl/NN Sapan/NN -/-- Jl/NN Tegal/NNP luar/NNP ]
+
+[ Jl/NN Soekarno/NNP Hatta/NNP -/-- Jl/NN Karasak/NNP ]
+
+[ Jl/NN Soekarno/NNP Hatta/NNP -/-- Jl/NN Kawaluyaan/NNP ]
+
+[ Jl/NN Soekarno/NNP Hatta/NNP -/-- Jl/NN Sekelimus/NNP ]
+
+[ Jl/NN Soekarno/NNP Hatta/NNP -/-- Riung/NNP Bandung/NNP ]
+
+[ Jl/NN Soekarno/NNP Hatta/NNP -/-- Sumber/NN Sari/NNP ]
+
+[ Jl/NN Sukajadi/NNP (/( depan/NN PVJ/NNP )/) ]
+
+[ Jl/NN Suniaraja/NNP -/-- Jl/NN Pecinan/NNP Lama/NNP ]
+
+[ Jl/NN Supratman/NNP -/-- Jl/NN A./NNP Yani/NNP ]
+
+[ Jl/NN Surapati/NNP (/( Depan/NN Gasibu/NNP )/) ]
+
+[ Jl/NN Tegalega/NNP -/-- Jl/NN Astana/NNP Anyar/NNP ]
+
+[ Jl/NN Viaduct/NNP -/-- Jl/NN Perintis/NNP Kemerdekaan/NN ]
+
+[ Jl/NN ./. AH/NNP Nasution/NNP -/-- Cibiru/NNP ]
+
+[ Jl/NN ./. Aceh/NNP -Jl/NN ./. Seram/NNP ]
+
+[ Jl/NN ./. Adityawarman/NN (/( SUTOS/NNP )/) ]
+
+[ Jl/NN ./. Alternatif/NNP Cibubur/NNP -/-- Cileungsi/NNP ]
+
+[ Jl/NN ./. Alternatif/NNP Cikarang/NNP -/-- Karawang/NNP ]
+
+[ Jl/NN ./. Arjuna/NNP Selatan/NN -/-- Kemanggisan/NNP ]
+
+[ Jl/NN ./. Banyuwangi/NNP Situbondo/NNP -/-- Surabaya/NNP ]
+
+[ Jl/NN ./. Bojongsoang/NNP (/( pertigaan/NN )/) ]
+
+[ Jl/NN ./. Boulevard/NNP Barat/NNP Kelapa/NNP Gading/NNP ]
+
+[ Jl/NN ./. Buah/NN Batu/NNP -/-- Cijagra/NNP ]
+
+[ Jl/NN ./. Buah/NN Batu/NNP -/-- Kliningan/NNP ]
+
+[ Jl/NN ./. Cikini/NNP Raya/NNP -/-- Menteng/NNP ]
+
+[ Jl/NN ./. Cilandak/NNP KKO/NNP -/-- Ampera/NNP ]
+
+[ Jl/NN ./. Ciledug/NNP Raya/NNP -/-- Cipulir/NNP ]
+
+[ Jl/NN ./. Ciputat/NNP Raya/NNP Kebayoran/NNP Lama/NNP ]
+
+[ Jl/NN ./. Ciputat/NNP Raya/NNP arah/RB Kebayoran/NNP ]
+
+[ Jl/NN ./. Ciputat/NNP Raya-Pd/NNP ./. Indah/NNP ]
+
+[ Jl/NN ./. Ciumbuleuit/NNP (/( Pertigaan/NN )/) ]
+
+[ Jl/NN ./. Daan/NN Mogot/NNP -/-- Grogol/NNP ]
+
+[ Jl/NN ./. Daan/NN Mogot/NNP arah/RB Grogol/NNP ]
+
+[ Jl/NN ./. Derwati/NNP (/( Pertigaan/NN )/) ]
+
+[ Jl/NN ./. Dewi/NNP Sartika/NNP -/-- Sawangan/NNP ]
+
+[ Jl/NN ./. Fatmawati/NNP Arah/RB Ps/NNP Rebo/NNP ]
+
+[ Jl/NN ./. Gajah/NNP Mada/NNP arah/RB Grogol/NNP ]
+
+[ Jl/NN ./. Gatot/NNP Subroto/NNP -/-- Karawang/NNP ]
+
+[ Jl/NN ./. Gatot/NNP Subroto/NNP -/-- Kuningan/NNP ]
+
+[ Jl/NN ./. Gito/NNP Gati/NNP -/-- Palagan/NNP ]
+
+[ Jl/NN ./. Gn/NNP ./. Sahari/NNP Raya/NNP ]
+
+[ Jl/NN ./. Gunung/NN Sahari/NNP -/-- Ancol/NNP ]
+
+[ Jl/NN ./. Gunung/NN Sahari/NNP -/-- Kemayoran/NNP ]
+
+[ Jl/NN ./. Gunung/NN Sahari/NNP arah/RB Senen/NNP ]
+
+[ Jl/NN ./. Gurame/NNP ,/, Buah/NN Batu/NNP ]
+
+[ Jl/NN ./. I/NNP Gusti/NNP Ngurah/RB Rai/NNP ]
+
+[ Jl/NN ./. Ir/NNP ./. H/NNP Djuanda/NNP ]
+
+[ Jl/NN ./. Ir/NNP ./. H./NNP Juanda/NNP ]
+
+[ Jl/NN ./. Ir/NNP ./. H./NNP Juanda/NNP ]
+
+[ Jl/NN ./. Ir/NNP ./. H./NNP Juanda-Ciputat/NNP ]
+
+[ Jl/NN ./. Jend/NNP ./. Gatot/NNP Subroto/NNP ]
+
+[ Jl/NN ./. Jenderal/NNP Sudirman/NNP -/-- Senopati/NNP ]
+
+[ Jl/NN ./. Jendral/NNP Haji/NNP Amir/NNP Machmud/NNP ]
+
+[ Jl/NN ./. Jendral/NNP Sudirman/NNP -/-- Alun-Alun/NN ]
+
+[ Jl/NN ./. KH/NNP ./. Ahmad/NNP Dahlan/NN ]
+
+[ Jl/NN ./. KH/NNP ./. Hasyim/NNP Ashari/NNP ]
+
+[ Jl/NN ./. KH/NNP ./. Sholeh/NNP Iskandar/NNP ]
+
+[ Jl/NN ./. Kalibutuh/NNP arah/RB Asem/NNP Rowo/NNP ]
+
+[ Jl/NN ./. Kartika/NNP Utama/NNP Pondok/NN Indah/NNP ]
+
+[ Jl/NN ./. Kemang/NNP Selatan/NN -/-- Ampera/NNP ]
+
+[ Jl/NN ./. Kemang/NNP Timur/NNP arah/RB Ampera/NNP ]
+
+[ Jl/NN ./. Kober/NN arah/RB Flyover/NN UI/NNP ]
+
+[ Jl/NN ./. Kramat/NNP Raya/NNP -/-- Senen/NNP ]
+
+[ Jl/NN ./. Kwitang/NNP Raya/NNP -/-- Menteng/NNP ]
+
+[ Jl/NN ./. Kyai/NNP Caringin/NNP -/-- Tomang/NNP ]
+
+[ Jl/NN ./. Laswi/NNP (/( Baleendah/NNP )/) ]
+
+[ Jl/NN ./. Layang/NNP Pancoran/NNP -/-- Cawang/NNP ]
+
+[ Jl/NN ./. Lenteng/NNP Agung/NNP arah/RB Margonda/NNP ]
+
+[ Jl/NN ./. Let/NNP ./. Jend/NNP Suprapto/NNP ]
+
+[ Jl/NN ./. M./NNP Saidi/NNP arah/RB Petukangan/NNP ]
+
+[ Jl/NN ./. M.T/NNP ./. Haryono/NNP Tangerang/NNP ]
+
+[ Jl/NN ./. MH/NNP ./. Thamrin-Merdeka/NNP Barat/NNP ]
+
+[ Jl/NN ./. Margacinta/NNP -/-- tugu/NNP kordon/NNP ]
+
+[ Jl/NN ./. Matraman/NN Raya/NNP -/-- Jatinegara/NNP ]
+
+[ Jl/NN ./. Medan/NNP Merdeka/NNP Barat-Bundaran/NNP HI/NNP ]
+
+[ Jl/NN ./. Medan/NNP Merdeka/NNP Utara-Istana/NNP Negara/NNP ]
+
+[ Jl/NN ./. Meruyung/NNP ,/, Pancoran/NNP Mas/NNP ]
+
+[ Jl/NN ./. Mintaredja/NNP (/( Pusdikpom/NNP )/) ]
+
+[ Jl/NN ./. Mitra/NNP Sunter/NNP -/-- MOI/NNP ]
+
+[ Jl/NN ./. Pahlawan/NNP (/( BI/NNP )/) ]
+
+[ Jl/NN ./. Paledang/NNP (/( Bogor/NNP )/) ]
+
+[ Jl/NN ./. Panjang/NNP -/-- Pos/NN Pengumben/NNP ]
+
+[ Jl/NN ./. Pantai/NNP Indah/NNP Utara/NNP -Cengkareng/NNP ]
+
+[ Jl/NN ./. Pasantren/NNP (/( Pertigaan/NN )/) ]
+
+[ Jl/NN ./. Pasar/NN Turi/NNP -/-- Dupak/NNP ]
+
+[ Jl/NN ./. Pasteur/NNP (/( Biofarma/NNP )/) ]
+
+[ Jl/NN ./. Pattimura/NNP arah/RB Bundaran/NN Senayan/NNP ]
+
+[ Jl/NN ./. Pd/NNP ./. Kelapa-/NNP Cawang/NNP ]
+
+[ Jl/NN ./. Pemuda/NNP Muntilan/NNP -/-- Magelang/NNP ]
+
+[ Jl/NN ./. Pemuda/NNP UNJ/NNP arah/RB Pramuka/NNP ]
+
+[ Jl/NN ./. Penjernihan/NN 1/NNP -/-- Karet/NNP ]
+
+[ Jl/NN ./. Perintis/NNP -/-- Guru/NNP Mughni/NNP ]
+
+[ Jl/NN ./. Perintis/NNP Kemerdekaan/NN -/-- Bekasi/NNP ]
+
+[ Jl/NN ./. Rancamanyar/NNP (/( Simpang/NN )/) ]
+
+[ Jl/NN ./. Raya/NNP Bekasi-Ps/NNP ./. Cakung/NNP ]
+
+[ Jl/NN ./. Raya/NNP Bogor/NNP -/-- Cijantung/NNP ]
+
+[ Jl/NN ./. Raya/NNP Bogor/NNP -/-- Cililitan/NNP ]
+
+[ Jl/NN ./. Raya/NNP Carita/NNP -/-- Anyer/NNP ]
+
+[ Jl/NN ./. Raya/NNP Ciasem/NNP -/-- Cirebon/NNP ]
+
+[ Jl/NN ./. Raya/NNP Cinunuk/NNP arah/RB Cileunyi/NNP ]
+
+[ Jl/NN ./. Raya/NNP Cipatat/NNP ,/, Citatah/NNP ]
+
+[ Jl/NN ./. Raya/NNP Dramaga/NNP -/-- Bogor/NNP ]
+
+[ Jl/NN ./. Raya/NNP Gempol/NNP -/-- Malang/NNP ]
+
+[ Jl/NN ./. Raya/NNP Kalimalang/NNP -/-- Cawang/NNP ]
+
+[ Jl/NN ./. Raya/NNP Kletek/NNP -/-- Surabaya/NNP ]
+
+[ Jl/NN ./. Raya/NNP Laswi/NNP ,/, Majalaya/NNP ]
+
+[ Jl/NN ./. Raya/NNP Maospati/NNP -/-- Solo/NNP ]
+
+[ Jl/NN ./. Raya/NNP Ngawi/NNP -/-- Caruban/NNP ]
+
+[ Jl/NN ./. Raya/NNP Ngawi/NNP -/-- Solo/NNP ]
+
+[ Jl/NN ./. Raya/NNP Ngawi/NNP -/-- Solo/NNP ]
+
+[ Jl/NN ./. Raya/NNP Ngawi/NNP -/-- Solo/NNP ]
+
+[ Jl/NN ./. Raya/NNP Parung/NNP Bingung/NNP Depok/NNP ]
+
+[ Jl/NN ./. Raya/NNP Pasar/NN Minggu-Lt./NNP Agung/NNP ]
+
+[ Jl/NN ./. Raya/NNP Piyungan/NNP Polsek/NNP Prambanan/NNP ]
+
+[ Jl/NN ./. Raya/NNP Rancaekek/NNP -/-- Majalaya/NNP ]
+
+[ Jl/NN ./. Raya/NNP Samarang/NNP -/-- Garut/NNP ]
+
+[ Jl/NN ./. Raya/NNP Sampang/NNP -/-- Buntu/NNP ]
+
+[ Jl/NN ./. Raya/NNP Sarangan/NNP -/-- Magetan/NN ]
+
+[ Jl/NN ./. Raya/NNP Sukabumi/NN ,/, Cicurug/NNP ]
+
+[ Jl/NN ./. Raya/NNP Suruh/NNP -/-- Karanggede/NNP ]
+
+[ Jl/NN ./. Raya/NNP Trowulan/NNP -/-- Jombang/NNP ]
+
+[ Jl/NN ./. Ridwan/NNP Rais/NNP -/-- Menteng/NNP ]
+
+[ Jl/NN ./. Salemba/NNP (/( UI/NNP )/) ]
+
+[ Jl/NN ./. Senopati/NNP -/-- SCBD/NNP Sudirman/NNP ]
+
+[ Jl/NN ./. Setiabudhi/NNP -/-- Geger/NNP Kalong/NNP ]
+
+[ Jl/NN ./. Seturan/NNP (/( STIE/NNP )/) ]
+
+[ Jl/NN ./. Sriwijaya/NNP (/( Pekalongan/NNP )/) ]
+
+[ Jl/NN ./. St./NN Delanggu/NNP -/-- Kaswari/NNP ]
+
+[ Jl/NN ./. Sudirman/NNP sekitar/NNP Dukuh/NNP Atas/NN ]
+
+[ Jl/NN ./. Sukaraja/NNP -/-- Gunung/NN Batu/NNP ]
+
+[ Jl/NN ./. Suniaraja/NNP -/-- Jl/NN Otista/NNP ]
+
+[ Jl/NN ./. Suryakencana/NNP (/( Bogor/NNP )/) ]
+
+[ Jl/NN ./. Tanjung/NNP Duren/NNP -/-- Grogol/NNP ]
+
+[ Jl/NN ./. Tentara/NNP Pelajar/NNP arah/RB Slipi/NNP ]
+
+[ Jl/NN ./. Terusan/NNP Jakarta/NNP -/-- Antapani/NNP ]
+
+[ Jl/NN ./. Terusan/NNP Kopo/NNP ,/, Katapang/NNP ]
+
+[ Jl/NN ./. Trunojoyo/NNP -/-- Blok/NNP M/NNP ]
+
+[ Jl/NN ./. Utan/NN Jati/NNP -/-- Kalideres/NNP ]
+
+[ Jl/NN ./. Warung/NN Lobak/NNP ,/, Soreang/NNP ]
+
+[ Jl/NN ./. Wijaya/NNP I/NNP arah/RB Prapanca/NNP ]
+
+[ Jl/NN ./. Wijaya/NNP menuju/IN Kapten/NNP Tendean/NNP ]
+
+[ Jl//NNP Sumatera/NNP -/-- Jl/NN ./. Veteran/NNP ]
+
+[ KM/NNP 23/CD Tol/NN Jagorawi/NNP arah/RB Bogor/NNP ]
+
+[ KM/NNP 4/CD Tol/NN Jagorawi/NNP arah/RB Cawang/NNP ]
+
+[ KM/NNP 8/CD Tol/NN Jagorawi/NNP arah/RB Cawang/NNP ]
+
+[ Karet/NNP arah/RB ke/NNP Bundaran/NN Hotel/NN Indonesia/NNP ]
+
+[ Kawasan/NNP Pasar/NN Gede/NNP (/( Solo/NNP )/) ]
+
+[ Kawasan/NNP SCBD/NNP arah/RB Polda/NNP Metro/NNP Jaya/NNP ]
+
+[ Kedung/NNP Cowek/NNP (/( SMA/NNP 19/CD )/) ]
+
+[ Kelapa/NNP Dua/NNP Depok/NNP arah/RB Lenteng/NNP Agung/NNP ]
+
+[ Kusuma/NNP Bangsa/NNP (/( HiTech/NNP Mall/NN )/) ]
+
+[ Ledeng/NNP -/-- Jl/NN ./. Sersan/NNP Bajuri/NNP ]
+
+[ Lt./NNP Agung/NNP -/-- Pd/NNP ./. Indah/NNP ]
+
+[ Lt./NNP Agung/NNP -/-- Ps/NNP ./. Minggu/NNP ]
+
+[ MERR/NNP (/( Arief/NNP Rachman/NN Hakim/NNP )/) ]
+
+[ Mayjend/NNP Sungkono/NNP (/( Ciputra/NNP World/NNP )/) ]
+
+[ Meruya/NNP -/-- Jl/NN ./. Raya/NNP Joglo/NNP ]
+
+[ Muara/NN Karang/NNP -/-- Pantai/NNP Indah/NNP Kapuk/NNP ]
+
+[ Ngagel/NNP Jaya/NNP Selatan/NN -/-- Ngagel/NNP Madya/NNP ]
+
+[ PMI/NNP Bantul/NNP -/-- Jl/NN ./. Bantul/NNP ]
+
+[ Perempatan/NN FedEx/NNP Pondok/NN Pinang/NNP dari/IN Ciputat/NNP ]
+
+[ Perempatan/NN Gading/NNP (/( Alun2/NNP Kidul/NNP )/) ]
+
+[ Perempatan/NN Kota/NNP Baru/NNP Parahyangan/NNP arah/RB Cimareme/NNP ]
+
+[ Perempatan/NN Manyar/NNP (/( Kebun/NNP Bibit/NNP )/) ]
+
+[ Perempatan/NN TL/NN arah/RB Kota/NNP Baru/NNP Parahyangan/NNP ]
+
+[ Persimpangan/NNP Bojongsari/NNP -/-- Ciputat/NNP -/-- Parung/NNP ]
+
+[ Pertigaan/NN Fatmawati/NNP Cipete/NNP arah/RB Lebak/NNP Bulus/NNP ]
+
+[ Pertigaan/NN Jl/NN Bandung/NNP -/-- Jl/NN Cinere/NNP ]
+
+[ Pertigaan/NN Teluk/NNP Pinang/NNP (/( Bogor/NNP )/) ]
+
+[ Pesing/NNP arah/RB Jl/NN ./. Tubagus/NNP Angke/NNP ]
+
+[ Pondok/NN Cabe/NNP arah/RB Lb/NNP ./. Bulus/NNP ]
+
+[ Pondok/NN Indah/NNP Mall/NN arah/RB Lebak/NNP Bulus/NNP ]
+
+[ Prapanca/NNP arah/RB Jl/NN ./. Antasari/NNP Raya/NNP ]
+
+[ Purwahamba/NNP Indah/NNP (/( Jalur/NNP Pantura/NNP )/) ]
+
+[ Rawa/NNP Buntu/NNP -/-- Taman/NN Tekno/NNP BSD/NNP ]
+
+[ Raya/NNP Darmo/NNP (/( Hotel/NN Mercure/NNP )/) ]
+
+[ Rest/NNP area/NNP Tol/NN Cipali/NNP KM/NNP 130/CD ]
+
+[ RingRoad/NNP Timur/NNP -/-- Jl/NN ./. Janti/NNP ]
+
+[ Senayan/NNP -/-- Gatot/NNP Subroto/NNP -/-- Slipi/NNP ]
+
+[ Sidowayah/NNP Arus/NN dari/IN Barat/NNP maupun/NNP Timur/NNP ]
+
+[ Simpang/NN 3/CD Air/NNP Mancur/NNP Arah/RB Kota/NNP ]
+
+[ Simpang/NN 4/CD Ahmad/NNP Yani/NNP dalam/NNP kota/NNP ]
+
+[ Simpang/NN Dinoyo/NNP -/-- Keputran/NNP -/-- Pandegiling/NNP ]
+
+[ Simpang/NN Kapasari/NNP -/-- Simokerto/NNP -/-- Kenjeran/NNP ]
+
+[ Simpang/NN Lamongrejo/NNP (/( Tugu/NNP Adipura/NNP )/) ]
+
+[ Simpang/NN Mayjend/NNP Sungkono/NNP -/-- Dukuh/NNP Kupang/NNP ]
+
+[ Simpang/NN Prof./NNP Dr./NNP Mustopo/NNP -/-- Dharmawangsa/NNP ]
+
+[ Simpang/NN Putro/NNP Agung/NNP -/-- Kedung/NNP Cowek/NNP ]
+
+[ Simpang/NN Tiga/CD Warung/NN Legok/NNP -/-- Singaparna/NNP ]
+
+[ Simpangan/NNP Tambak/NNP Aji/NNP (/( Semarang/NNP )/) ]
+
+[ Stasiun/NN Lenteng/NNP Agung/NNP arah/RB Pasar/NN Minggu/NNP ]
+
+[ Stasiun/NN Palmerah/RB arah/RB ke/NNP Patal/NNP Senayan/NNP ]
+
+[ Stasiun/NN Tanjung/NNP Barat/NNP -/-- Pasar/NN Rebo/NNP ]
+
+[ Suradadi/NNP (/( Tegal/NNP )/) arah/RB Pemalang/NNP ]
+
+[ TL/NN Alfa/NNP Indah/NNP -/-- Pos/NN Pengumben/NNP ]
+
+[ Tb/NNP ./. simatupang/NNP -/-- Pasar/NN Rebo/NNP ]
+
+[ Terusan/NNP Gedek/NNP -/-- Ploso/NNP -/-- Jombang/NNP ]
+
+[ Tol/NN Bambu/NNP Apus/NN -/-- Lt./NNP Agung/NNP ]
+
+[ Tol/NN Bambu/NNP Apus/NN -/-- Pondok/NN Indah/NNP ]
+
+[ Tol/NN Bekasi/NNP Barat/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Bekasi/NNP Timur/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Bekasi/NNP Timur/NNP -/-- Cikarang/NNP Barat/NNP ]
+
+[ Tol/NN Bekasi/NNP Timur/NNP -/-- Cikarang/NNP Utama/NNP ]
+
+[ Tol/NN CTC/NNP -/-- Cawang/NNP -/-- Cengkareng/NNP ]
+
+[ Tol/NN Ciawi/NNP -/-- TMII/NNP -/-- Cawang/NNP ]
+
+[ Tol/NN Cikarang/NNP Barat/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Cikarang/NNP Barat/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Cikarang/NNP Barat/NNP -/-- Cikarang/NNP Timur/NNP ]
+
+[ Tol/NN Cikarang/NNP KM/NNP 37/CD arah/RB Cikampek/NNP ]
+
+[ Tol/NN Cikopo/NNP -/-- Palimanan/NNP KM/NNP 102/CD ]
+
+[ Tol/NN Cikunir/NNP arah/RB Cikampek/NNP KM/NNP 9/CD ]
+
+[ Tol/NN Cilandak/NNP -/-- Ps/NNP ./. Rebo/NNP ]
+
+[ Tol/NN Cipayung/NNP -/-- Kp/NNP ./. Rambutan/NN ]
+
+[ Tol/NN Cipularang/NNP KM/NNP 112+400/CD arah/RB Bandung/NNP ]
+
+[ Tol/NN Ciputat/NNP -/-- Ps/NNP ./. Minggu/NNP ]
+
+[ Tol/NN Gedong/NNP -/-- Keluar/VB Pondok/NN Indah/NNP ]
+
+[ Tol/NN Gn/NNP ./. Sari/NNP -/-- Perak/NNP ]
+
+[ Tol/NN Halim/NNP -/-- Interchange/NNP Tanjung/NNP Priok/NNP ]
+
+[ Tol/NN Halim/NNP -/-- Jt/NNP ./. Bening/NNP ]
+
+[ Tol/NN JORR/NNP W2/NNP Meruya/NNP arah/RB Joglo/NNP ]
+
+[ Tol/NN Jagorawi/NNP -/-- Cawang/NNP -/-- Ciawi/NNP ]
+
+[ Tol/NN Jagorawi/NNP Cililitan/NNP -/-- Kali/NNP Cipinang/NNP ]
+
+[ Tol/NN Jagorawi/NNP KM/NNP 12/CD arah/RB Cawang/NNP ]
+
+[ Tol/NN Jagorawi/NNP KM/NNP 14/CD arah/RB Cawang/NNP ]
+
+[ Tol/NN Jagorawi/NNP KM/NNP 16/CD arah/RB Cawang/NNP ]
+
+[ Tol/NN Jakarta/NNP -/-- Tangerang/NNP KM/NNP 17/CD ]
+
+[ Tol/NN Jakarta/NNP -/-- Tangerang/NNP KM/NNP 3/CD ]
+
+[ Tol/NN Japek/NNP -/-- Cibitung/NNP KM/NNP 24/CD ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Barat/NNP -/-- Cikunir/NNP ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Barat/NNP -/-- Tambun/NNP ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Timur/NNP -/-- Cikunir/NNP ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Timur/NNP -/-- Tambun/NNP ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Timur/NNP KM/NNP 16/CD ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Timur/NNP KM/NNP 17/CD ]
+
+[ Tol/NN Japek/NNP Bekasi/NNP Timur/NNP KM/NNP 19/CD ]
+
+[ Tol/NN Japek/NNP Cibitung/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Japek/NNP Cikarang/NNP Barat/NNP KM/NNP 28/CD ]
+
+[ Tol/NN Japek/NNP Cikarang/NNP Barat/NNP KM/NNP 33+200/CD ]
+
+[ Tol/NN Japek/NNP Cikarang/NNP Timur/NNP KM/NNP 35/CD ]
+
+[ Tol/NN Japek/NNP Cikarang/NNP Timur/NNP KM/NNP 40/CD ]
+
+[ Tol/NN Japek/NNP Cikarang/NNP Utama/NNP KM/NNP 28/CD ]
+
+[ Tol/NN Japek/NNP Cikunir/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Japek/NNP Jatiwaringin/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Japek/NNP KM/NNP 30/CD Cikarang/NNP Barat/NNP ]
+
+[ Tol/NN Japek/NNP KM/NNP 59/CD -/-- Jakarta/NNP ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Barat/NNP -/-- Cikampek/NNP ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Barat/NNP -/-- Cikampek/NNP ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Barat/NNP KM/NNP 46/CD ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Barat/NNP KM/NNP 48/CD ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Timur/NNP KM/NNP 48+800/CD ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Timur/NNP KM/NNP 51/CD ]
+
+[ Tol/NN Japek/NNP Karawang/NNP Timur/NNP KM/NNP 54/CD ]
+
+[ Tol/NN Japek/NNP Tambun/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Japek/NNP Tambun/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Japek/NNP Tambun/NNP -/-- Cikarang/NNP Barat/NNP ]
+
+[ Tol/NN Japek/NNP Tambun/NNP -/-- Karawang/NNP Barat/NNP ]
+
+[ Tol/NN Japek/NNP arah/RB Cikarang/NNP KM/NNP 8/CD ]
+
+[ Tol/NN Jati/NNP Bening/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Jati/NNP Bening/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Jati/NNP Bening/NNP -/-- Bekasi/NNP Timur/NNP ]
+
+[ Tol/NN Jati/NNP Bening/NNP -/-- Cikarang/NNP Barat/NNP ]
+
+[ Tol/NN Jati/NNP Bening/NNP -/-- Cikarang/NNP Timur/NNP ]
+
+[ Tol/NN Jati/NNP Waringin/NNP -/-- Bekasi/NNP Barat/NNP ]
+
+[ Tol/NN Jati/NNP Warna/NNP -/-- Keluar/VB Fatmawati/NNP ]
+
+[ Tol/NN Jati/NNP Warna/NNP -/-- Lenteng/NNP Agung/NNP ]
+
+[ Tol/NN Jati/NNP Warna/NNP -/-- Pondok/NN Labu/NNP ]
+
+[ Tol/NN Jatiasih/NNP -/-- Bintara/NNP -/-- Cakung/NNP ]
+
+[ Tol/NN Jatiwaringin/NNP KM/NNP 4/CD dari/IN Cawang/NNP ]
+
+[ Tol/NN Joglo/NNP -/-- Pd/NNP ./. Indah/NNP ]
+
+[ Tol/NN Joglo/NNP -/-- Ps/NNP ./. Rebo/NNP ]
+
+[ Tol/NN Jorr/NNP -/-- Kp/NNP ./. Rambutan/NN ]
+
+[ Tol/NN Jorr/NNP -/-- Pd/NNP ./. Indah/NNP ]
+
+[ Tol/NN Kamal/NNP Jalur/NNP Atas/NN -/-- Kapuk/NNP ]
+
+[ Tol/NN Kampung/NNP Rambutan/NN -/-- Jati/NNP Asih/NNP ]
+
+[ Tol/NN Kampung/NNP Rambutan/NN -/-- Pasar/NN Rebo/NNP ]
+
+[ Tol/NN Kampung/NNP Rambutan/NN -/-- Pondok/NN Indah/NNP ]
+
+[ Tol/NN Kampung/NNP Rambutan/NN -/-- Pondok/NN Labu/NNP ]
+
+[ Tol/NN Karang/NNP Tengah/NNP -/-- Kebon/NN Jeruk/NNP ]
+
+[ Tol/NN Karawang/NNP Barat/NNP -/-- Karawang/NNP Timur/NNP ]
+
+[ Tol/NN Kebon/NN Jeruk/NNP -/-- Karang/NNP Tengah/NNP ]
+
+[ Tol/NN Kebon/NN Nanas/NNP -/-- Cempaka/NNP Putih/NNP ]
+
+[ Tol/NN Kebon/NN Nanas/NNP -/-- Tanjung/NNP Priok/NNP ]
+
+[ Tol/NN Kedoya/NNP -/-- Kb/NN ./. Jeruk/NNP ]
+
+[ Tol/NN Kembangan/NNP -/-- Kb/NN ./. Jeruk/NNP ]
+
+[ Tol/NN Lb/NNP ./. Bulus/NNP -/-- Priok/NNP ]
+
+[ Tol/NN Lb/NNP ./. Bulus-Kp/NNP ./. Rambutan/NN ]
+
+[ Tol/NN Lenteng/NNP Agung/NNP -/-- Pasar/NN Rebo/NNP ]
+
+[ Tol/NN Lenteng/NNP Agung/NNP -/-- Pondok/NN Indah/NNP ]
+
+[ Tol/NN Padaleunyi/NNP :/: Sadang/NNP KM/NNP 77/NNP ]
+
+[ Tol/NN Palimanan/NNP -/-- Kanci/NNP KM/NNP 12+000/NNP ]
+
+[ Tol/NN Pasar/NN Rebo/NNP -/-- Lebak/NNP Bulus/NNP ]
+
+[ Tol/NN Pasar/NN Rebo/NNP -/-- Pasar/NN Minggu/NNP ]
+
+[ Tol/NN Pd/NNP ./. Indah/NNP -/-- Cikunir/NNP ]
+
+[ Tol/NN Pd/NNP ./. Pinang-Pd/NNP ./. Labu/NNP ]
+
+[ Tol/NN Pluit/NNP -/-- Bandara/NNP Soekarno/NNP Hatta/NNP ]
+
+[ Tol/NN Pondok/NN Indah/NNP -/-- Pasar/NN Rebo/NNP ]
+
+[ Tol/NN Pondok/NN Pinang/NNP -/-- Pasar/NN Rebo/NNP ]
+
+[ Tol/NN Priok/NNP -/-- Pluit/NNP -/-- Kapuk/NNP ]
+
+[ Tol/NN Ps/NNP ./. Rebo/NNP -/-- Cibubur/NNP ]
+
+[ Tol/NN Pulomas/NNP arah/RB ke/NNP Tanjung/NNP Priok/NNP ]
+
+[ Tol/NN Purbaleunyi/NNP KM/NNP 142/CD Buah/NN Batu/NNP ]
+
+[ Tol/NN Purbaleunyi/NNP KM/NNP 90/CD -/-- Jakarta/NNP ]
+
+[ Tol/NN Satelit/NNP -/-- Hr/NNP ./. Mohammad/NNP ]
+
+[ Tol/NN Slipi/NNP -/-- Grogol/NNP -/-- Angke/NNP ]
+
+[ Tol/NN Slipi/NNP -/-- Semanggi/NNP -/-- Cawang/NNP ]
+
+[ Tol/NN Solo/NNP Kertosono/NNP (/( PlosoKerep/NNP )/) ]
+
+[ Tol/NN TMII/NNP -/-- Ps/NNP ./. Rebo/NNP ]
+
+[ Tol/NN Tambun/NNP -/-- Jt/NNP ./. Bening/NNP ]
+
+[ Tol/NN Tangerang/NNP -/-- Cikupa/NNP KM/NNP 30/CD ]
+
+[ Tol/NN Tangerang/NNP -/-- Merak/NNP KM/NNP 29/CD ]
+
+[ Tol/NN Tanjung/NNP Duren/NNP -/-- Keluar/VB Slipi/NNP ]
+
+[ Tol/NN Tomang/NNP -/-- Keluar/VB Tanjung/NNP Duren/NNP ]
+
+[ Tol/NN Tomang/NNP KM/NNP 5/CD arah/RB Tangerang/NNP ]
+
+[ Tol/NN Ulujami/NNP -/-- Pd/NNP ./. Labu/NNP ]
+
+[ Tol/NN Veteran/NNP arah/RB ke/NNP Pondok/NN Indah/NNP ]
+
+[ Tol/NN Warakas/NNP -/-- Tj/NNP ./. Priok/NNP ]
+
+[ Tol/NN Wiyoto/NNP Wiyono/NNP Cawang/NNP -/-- TMII/NNP ]
+
+[ Trosobo/NNP (/( Masjid/NNP Al/NNP Wahyu/NNP )/) ]
+
+[ Tugu/NNP -/-- Jl/NN ./. Margo/NNP Utomo/NNP ]
+
+[ Turunan/NN Nagrek/NNP (/( menuju/IN Cagak/NNP )/) ]
+

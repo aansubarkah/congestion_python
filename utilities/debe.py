@@ -78,8 +78,77 @@ class Denomination(BasePostgresTraffic):
     active = Column(Boolean, default=True)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
-    verified = Column(Boolean, default=False)
     trained = Column(Boolean, default=False)
+
+class DataTwitter(BasePostgresTraffic):
+    __tablename__ = 'data_twitter'
+    raw_id = Column(BigInteger, primary_key=True)
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    classifying = Column(Boolean, default=False)
+    tagging = Column(Boolean, default=False)
+    chunking = Column(Boolean, default=False)
+    locating = Column(Boolean, default=False)
+    kind_id = Column(BigInteger())
+    at_classification_id = Column(Integer())
+    denomination_id = Column(BigInteger())
+    mt_classification_id = Column(Integer())
+    classification_id = Column(Integer())
+    classification_name = Column(String(255))
+    respondent_id = Column(BigInteger())
+    respondent_name = Column(String(255))
+
+class DataWord(BasePostgresTraffic):
+    __tablename__ = 'data_word'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    kind_id = Column(BigInteger())
+    classification_id = Column(Integer())
+    classification_name = Column(String(255))
+    word_id = Column(BigInteger, primary_key=True)
+    sequence = Column(Integer())
+    word_name = Column(String(255))
+    tag_id = Column(Integer())
+    tag_name = Column(String(255))
+    tag_description = Column(String(255))
+
+class DataSpot(BasePostgresTraffic):
+    __tablename__ = 'data_spot'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    respondent_id = Column(BigInteger())
+    respondent_name = Column(String(255))
+    chunk_id = Column(BigInteger())
+    place = Column(String(255))
+    condition = Column(String(255))
+    weather = Column(String(255))
+    spot_id = Column(BigInteger, primary_key=True)
+    place_id = Column(BigInteger())
+    place_name = Column(String(255))
+    lat = Column(Float())
+    lng = Column(Float())
+    regency_id = Column(Integer())
+    regency_name = Column(String(255))
+    hierarchy_id = Column(Integer())
+    hierarchy_name = Column(String(255))
+    category_id = Column(Integer())
+    category_name = Column(String(255))
+    weather_id = Column(Integer())
+    weather_name = Column(String(255))
+
+class DataChunk(BasePostgresTraffic):
+    __tablename__ = 'data_chunk'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    respondent_id = Column(BigInteger())
+    respondent_name = Column(String(255))
+    chunk_id = Column(BigInteger, primary_key=True)
+    place = Column(String(255))
+    condition = Column(String(255))
+    weather = Column(String(255))
 
 class Word(BasePostgresTraffic):
     __tablename__ = 'words'
@@ -132,6 +201,7 @@ class Piece(BasePostgresTraffic):
     weather = Column(String(255))
     trained = Column(Boolean, default=False)
     active = Column(Boolean, default=True)
+    processed = Column(Boolean, default=False)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
 
@@ -190,6 +260,21 @@ class ProcessSpoting(BasePostgresTraffic):
     condition = Column(String(255))
     weather = Column(String(255))
 
+class ProcessLabelChunk(BasePostgresTraffic):
+    __tablename__ = 'process_label_chunk'
+    raw_id = Column(BigInteger())
+    respondent_id = Column(BigInteger())
+    t_time = Column(DateTime())
+    info = Column(Text())
+    respondent_name = Column(String(255))
+    respondent_region_id = Column(Integer())
+    t_user_id = Column(BigInteger())
+    kind_id = Column(BigInteger())
+    piece_id = Column(BigInteger, primary_key=True)
+    place = Column(String(255))
+    condition = Column(String(255))
+    weather = Column(String(255))
+
 class Regency(BasePostgresTraffic):
     __tablename__ = 'regencies'
     id = Column(BigInteger, primary_key=True)
@@ -237,12 +322,13 @@ class Space(BasePostgresTraffic):
     id = Column(BigInteger, primary_key=True)
     piece_id = Column(BigInteger())
     raw_id = Column(BigInteger())
-    user_id = Column(BigInteger())
+    user_id = Column(BigInteger, default=3)
     place_id = Column(BigInteger())
     category_id = Column(Integer())
     weather_id = Column(Integer, default=1)
     active = Column(Boolean, default=True)
     trained = Column(Boolean, default=False)
+    verified = Column(Boolean, default=False)
     created = Column(DateTime(), default=datetime.now)
     modified = Column(DateTime(), default=datetime.now, onupdate=datetime.now)
 
@@ -415,3 +501,32 @@ class ProcessRegency(BasePostgresTraffic):
     region_lng = Column(Float())
     region_name = Column(String(255))
     region_description = Column(String(255))
+
+class TrainKind(BasePostgresTraffic):
+    __tablename__ = 'train_kind'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    kind_id = Column(BigInteger())
+    at_classification_id = Column(Integer())
+    denomination_id = Column(BigInteger, primary_key=True)
+    mt_classification_id = Column(Integer())
+    trained = Column(Boolean, default=True)
+    classification_id = Column(Integer())
+    classification_name = Column(String(255))
+    respondent_id = Column(BigInteger())
+    respondent_name = Column(String(255))
+    respondent_twitter_id = Column(BigInteger())
+
+class TrainWord(BasePostgresTraffic):
+    __tablename__ = 'train_word'
+    raw_id = Column(BigInteger())
+    info = Column(String(255))
+    t_time = Column(DateTime())
+    syllable_id = Column(BigInteger, primary_key=True)
+    sequence = Column(Integer())
+    syllable_name = Column(String(255))
+    trained = Column(Boolean, default=False)
+    tag_id = Column(Integer())
+    tag_name = Column(String(255))
+    tag_description = Column(String(255))
