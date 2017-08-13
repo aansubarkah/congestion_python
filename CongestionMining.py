@@ -3,6 +3,11 @@ from debe import *
 from tw import *
 
 class CongestionMining(object):
+    startText = None
+    startTime = None
+    finishText = None
+    elapsed = None
+
     def __init__(self):
         self.main()
 
@@ -24,6 +29,11 @@ class CongestionMining(object):
 
         self.elapsed = math.ceil(timeit.default_timer() - self.startTime)
         self.finishText = time.strftime("%H:%M:%S")
+        duration_minutes = divmod(self.elapsed, 60)
+        duration_hours = divmod(duration_minutes[0], 60)
+        print('Waktu Mulai', self.startText)
+        print('Waktu Selesai', self.finishText)
+        print('Durasi', str(duration_hours[0]), ':', str(duration_hours[1]), ':', str(duration_minutes[1]))
 
     # Function to get respondent_id
     def find_respondent_id(self, t_user_id):
@@ -88,6 +98,7 @@ class CongestionMining(object):
         #sessionPostgresTraffic.commit()
 
     def main(self):
+        self.get_start_time()
         max_id = sessionPostgresTraffic.query(func.max(Raw.t_id).label("max_id")).one()
         data = self.get_last_timeline(max_id)
         results = []
@@ -104,6 +115,9 @@ class CongestionMining(object):
             sessionPostgresTraffic.commit()
         else:
             results = []
+
+        print('Banyak Data', str(len(results)))
+        self.get_finish_time()
 
 def main():
     CongestionMining()

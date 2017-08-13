@@ -2,6 +2,11 @@
 from debe import *
 
 class CongestionSpoting(object):
+    startText = None
+    startTime = None
+    finishText = None
+    elapsed = None
+
     def __init__(self):
         self.main()
 
@@ -23,6 +28,11 @@ class CongestionSpoting(object):
 
         self.elapsed = math.ceil(timeit.default_timer() - self.startTime)
         self.finishText = time.strftime("%H:%M:%S")
+        duration_minutes = divmod(self.elapsed, 60)
+        duration_hours = divmod(duration_minutes[0], 60)
+        print('Waktu Mulai', self.startText)
+        print('Waktu Selesai', self.finishText)
+        print('Durasi', str(duration_hours[0]), ':', str(duration_hours[1]), ':', str(duration_minutes[1]))
 
     def get_chunks_unprocessed(self, limitQuery):
         data = []
@@ -180,6 +190,7 @@ class CongestionSpoting(object):
         sessionPostgresTraffic.add(temp)
 
     def main(self):
+        self.get_start_time()
         limitQuery = 50
         results = []
         data = self.get_chunks_unprocessed(limitQuery)
@@ -195,6 +206,8 @@ class CongestionSpoting(object):
             for r in results:
                 self.update_chunk_data(r[0])
                 print(r)
+            print('Banyak Data', str(len(results)))
+            self.get_finish_time()
 
 def main():
     CongestionSpoting()

@@ -6,7 +6,7 @@ from openpyxl.compat import range
 from openpyxl.utils import get_column_letter
 
 wb = Workbook()
-dest_filename = 'empty_wb1.xlsx'
+dest_filename = 'empty_wb25.xlsx'
 ws = wb.active
 ws.title = 'Datum'
 

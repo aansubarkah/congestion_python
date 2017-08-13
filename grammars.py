@@ -9,11 +9,23 @@ grammardefault = [
 ]
 grammars[0].append(grammardefault)
 
+# @e100ss
+grammars[848614550] = []
+grammare100ss1 = [
+    "{<NN.?>+<NN.?|VB|CC|CD|DC|IN|MD|RB|WP>*<NN.?|CD|MD>*<JJ>+}", # chunk
+    "}<RB|IN|VB|CD|CC|MD|WP>+{" # chink
+]
+grammars[848614550].append(grammare100ss1)
+
 # @SbyTrafficServ
 grammars[203740486] = []
+#grammarsbytrafficserv1 = [
+    #"{<NN.?>*<\.>*<-.?>*<IN.?>*<RB.?>*<NN.?>+<VB.?|RB|MD|CD|DC>*<JJ>+}", # chunk
+    #"}<VB.?|MD|CD|DC|RB>+{" # chink
+#]
 grammarsbytrafficserv1 = [
-    "{<NN.?>*<\.>*<-.?>*<IN.?>*<RB.?>*<NN.?>+<VB.?|RB|MD|CD|DC>*<JJ>+}", # chunk
-    "}<VB.?|MD|CD|DC|RB>+{" # chink
+    "{<RB|VB>+<SYM>*<IN>*<NN.?>+<NN.?|VB|CC|CD|DC|IN|JJ>*<SYM>*<NN.?>*<VB>*<JJ>+}", # chunk
+    "}<RB|IN|VB|CD|CC>+{" # chink
 ]
 grammars[203740486].append(grammarsbytrafficserv1)
 
@@ -35,10 +47,15 @@ grammars[540625251].append(grammarptjasamarga1)
 
 # @SenkomCMNP
 grammars[1445782526] = []
+#grammarsencomcmnp = [
+    #"{<NN.?>+<NN.?|--|CD|CC|,|IN>*<NN.?><RB|PRP|MD>*<JJ>+}",
+    #"}<RB|PRP|MD|CC>{"
+#]
 grammarsencomcmnp = [
-    "{<NN.?>+<NN.?|--|CD|CC|,|IN>*<NN.?><RB|PRP|MD>*<JJ>+}",
+    "{<NN.?>+<NN.?|DC|CD|CC|IN>*<RB|PRP|MD>*<JJ>+}",
     "}<RB|PRP|MD|CC>{"
 ]
+
 grammars[1445782526].append(grammarsencomcmnp)
 
 # @tol_mms

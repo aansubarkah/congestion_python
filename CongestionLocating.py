@@ -2,6 +2,11 @@
 from debe import *
 
 class CongestionLocating(object):
+    startText = None
+    startTime = None
+    finishText = None
+    elapsed = None
+
     def __init__(self):
         self.main()
 
@@ -23,10 +28,19 @@ class CongestionLocating(object):
 
         self.elapsed = math.ceil(timeit.default_timer() - self.startTime)
         self.finishText = time.strftime("%H:%M:%S")
+        duration_minutes = divmod(self.elapsed, 60)
+        duration_hours = divmod(duration_minutes[0], 60)
+        print('Waktu Mulai', self.startText)
+        print('Waktu Selesai', self.finishText)
+        print('Durasi', str(duration_hours[0]), ':', str(duration_hours[1]), ':', str(duration_minutes[1]))
 
     # Get unchunked kinds
     def get_kinds_unchunked(self, limitQuery):
         data = []
+
+        #filter(ProcessChunking.classification_id == 1, ProcessChunking.respondent_id == 49).\
+
+        #filter(ProcessChunking.classification_id == 1, ProcessChunking.kind_processed == True, ProcessChunking.kind_chunked == False).\
         query = sessionPostgresTraffic.query(ProcessChunking).\
             filter(ProcessChunking.classification_id == 1, ProcessChunking.kind_processed == True, ProcessChunking.kind_chunked == False).\
             order_by(desc(ProcessChunking.t_time)).\
@@ -123,6 +137,7 @@ class CongestionLocating(object):
             sessionPostgresTraffic.add(temp)
 
     def main(self):
+        self.get_start_time()
         limitQuery = 50
         results = []
         data = self.get_kinds_unchunked(limitQuery)
@@ -138,10 +153,21 @@ class CongestionLocating(object):
             results = []
 
         if len(results) > 0:
+            err = 0
+            number = 1
             for r in results:
+                text = ''
+                for d in r[2]:
+                    text = text + ' ' + str(d[0])
                 self.update_kind_data(r[0])
                 self.update_word_data(r[0])
-                print(r)
+                print(str(number), text, r[4])
+                if not r[4]:
+                    err += 1
+                number += 1
+            print('Gagal mendapat lokasi', str(err), 'twit')
+            print('Banyak Data', str(len(results)))
+            self.get_finish_time()
 
 def main():
     CongestionLocating()

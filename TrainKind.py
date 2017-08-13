@@ -10,6 +10,7 @@ import shutil
 import json
 
 mypath = '/home/aan/congestion/relevant_classifiers/'
+#stopwords_path = '/home/aan/congestion/id.stopwords.02.01.2016.txt'
 denomination_start = int(sys.argv[1])
 denomination_end = int(sys.argv[2])
 account = int(sys.argv[3])
@@ -43,6 +44,38 @@ accounts = [[q.id, q.name, q.t_user_id] for q in query]
 # Get all pickle
 pick = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 #print(pick)
+
+def cleaning(datum):
+    import string
+    import re
+    data = datum
+    # remove url, pic twitter and mentionp
+    data = re.sub(r"(?:\RT @|@|pic.twitter.com|https?\://)\S+", '', data)
+    #substitute - to space
+    data = data.replace('-', ' ')
+
+    # remove tab and new line
+    data = data.replace('\n', ' ')
+    data = data.replace('\t', ' ')
+    # remove punctuation
+    translator = str.maketrans('', '', string.punctuation)
+    data = data.translate(translator)
+    # remove non ascii
+    data = re.sub(r'[^\x00-\x7F]+', '', data)
+    # remove emoji
+    #data = data.decode('unicode_escape').encode('ascii', 'ignore')
+    emoji_pattern = re.compile("["
+        "\U0001F600-\U0001F64F"
+        "\U0001F300-\U0001F5FF"
+        "\U0001F680-\U0001F6FF"
+        "\U0001F1E0-\U0001F1FF"
+        "]+", flags=re.UNICODE)
+    data = emoji_pattern.sub(r'', data)
+    # remove space more than 1
+    data = re.sub(" +", " ", data)
+    data = data.strip()
+    data = data.lower()
+    return data
 
 for a in accounts:
     # Check if HAM is >= limit
@@ -96,22 +129,25 @@ for a in accounts:
         for q in queryHam:
             datum = {}
             datum['raw_id'] = q.raw_id
-            datum['info'] = q.info
+            datum['original_info'] = q.info
+            datum['info'] = cleaning(q.info)
             datum['class'] = q.classification_name
             datum['respondent'] = q.respondent_name
             dataJson.append(datum)
         for q in querySpam:
             datum = {}
             datum['raw_id'] = q.raw_id
-            datum['info'] = q.info
+            datum['original_info'] = q.info
+            datum['info'] = cleaning(q.info)
             datum['class'] = q.classification_name
             datum['respondent'] = q.respondent_name
             dataJson.append(datum)
         #for d in dataJson:
             #print(d['info'])
+        print(dataJson)
         jsonName = 'classification_name_' + str(account) + '.json'
         with open(jsonName, 'w') as f:
-            json.dump(dataJson, f)
+            json.dump(dataJson, f, indent=4)
         #print(data)
 
         # Train

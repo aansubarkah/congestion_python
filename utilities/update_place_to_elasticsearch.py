@@ -2,6 +2,7 @@
 from elasticsearch import Elasticsearch
 from prettytable import PrettyTable
 from debe import *
+import sys
 
 index_name = 'congestion'
 doc_type = 'congestion_doc'
@@ -11,8 +12,14 @@ es = Elasticsearch([{
         'port': 9200
     }])
 
-places = sessionPostgresTraffic.query(ProcessSpot).\
-    all()
+if int(sys.argv[1]) != 0:
+    place_id_to_update = int(sys.argv[1])
+    places = sessionPostgresTraffic.query(ProcessSpot).\
+        filter(ProcessSpot.place_id == place_id_to_update).\
+        all()
+else:
+    places = sessionPostgresTraffic.query(ProcessSpot).\
+        all()
 
 number = 1
 table = PrettyTable(["No", "Name", "Lat", "Lng", "Regency"])

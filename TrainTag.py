@@ -33,7 +33,6 @@ for q in query:
     dataTagger.append(syllableTemp)
     dataJson.append({'raw_id': q.raw_id, 'info': info, 'tags': datumWord})
 
-
 #print(dataTagger)
 # Read .pos
 mypath = '/home/aan/congestion/pos/'

@@ -2,6 +2,11 @@
 from debe import *
 
 class CongestionTagging(object):
+    startText = None
+    startTime = None
+    finishText = None
+    elapsed = None
+
     def __init__(self):
         self.main()
 
@@ -23,6 +28,11 @@ class CongestionTagging(object):
 
         self.elapsed = math.ceil(timeit.default_timer() - self.startTime)
         self.finishText = time.strftime("%H:%M:%S")
+        duration_minutes = divmod(self.elapsed, 60)
+        duration_hours = divmod(duration_minutes[0], 60)
+        print('Waktu Mulai', self.startText)
+        print('Waktu Selesai', self.finishText)
+        print('Durasi', str(duration_hours[0]), ':', str(duration_hours[1]), ':', str(duration_minutes[1]))
 
     # Get unprocessed kinds
     def get_kinds_unprocessed(self, limitQuery):
@@ -36,19 +46,45 @@ class CongestionTagging(object):
         return data
 
     def cleaning(self, data):
+        import string
         import re
         # remove url, pic twitter and mentionp
         datum = re.sub(r"(?:\RT @|@|pic.twitter.com|https?\://)\S+", '', data)
+        #substitute - to space
+        datum = datum.replace('-', ' ')
+
+        # remove tab and new line
+        datum = datum.replace('\n', ' ')
+        datum = datum.replace('\t', ' ')
+        # remove punctuation
+        translator = str.maketrans('', '', string.punctuation)
+        datum = datum.translate(translator)
+        # remove non ascii
+        datum = re.sub(r'[^\x00-\x7F]+', '', datum)
+        # remove emoji
+        #data = data.decode('unicode_escape').encode('ascii', 'ignore')
+        emoji_pattern = re.compile("["
+            "\U0001F600-\U0001F64F"
+            "\U0001F300-\U0001F5FF"
+            "\U0001F680-\U0001F6FF"
+            "\U0001F1E0-\U0001F1FF"
+            "]+", flags=re.UNICODE)
+        datum = emoji_pattern.sub(r'', datum)
+        # remove space more than 1
+        datum = re.sub(" +", " ", datum)
+        datum = datum.strip()
+        datum = datum.lower()
+
         # remove anything inside ()
         #datum = re.sub(r"\([^)]*\)", "", datum)
         # substitute . to space
-        datum = re.sub(r"\.", " ", datum)
+        #datum = re.sub(r"\.", " ", datum)
         # remove space more than 1
-        datum = re.sub(" +", " ", datum)
-        datum.replace('(','')
-        datum.replace(')', '')
-        datum = datum.strip()
-        datum = datum.lower()
+        #datum = re.sub(" +", " ", datum)
+        #datum.replace('(','')
+        #datum.replace(')', '')
+        #datum = datum.strip()
+        #datum = datum.lower()
         return datum
 
     def tagging(self, data):
@@ -103,6 +139,7 @@ class CongestionTagging(object):
             sessionPostgresTraffic.add(temp)
 
     def main(self):
+        self.get_start_time()
         limitQuery = 50
         results = []
         data = self.get_kinds_unprocessed(limitQuery)
@@ -121,6 +158,9 @@ class CongestionTagging(object):
             for r in results:
                 self.update_kind_data(r[1])
                 print(r)
+
+            print('Banyak Data', str(len(results)))
+            self.get_finish_time()
 
 def main():
     CongestionTagging()
